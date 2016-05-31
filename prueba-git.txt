@@ -5,3 +5,6 @@ esto no es lo que habia escrito
 =======
 editando el txt
 >>>>>>> origin/master
+
+
+escritorio yo
