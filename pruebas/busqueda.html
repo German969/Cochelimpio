@@ -1,0 +1,82 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="es" /> 
+<title>Buscador</title>
+<style type="text/css">
+	.zoom{
+		transition: 1.5s ease;
+ 		-moz-transition: 1.5s ease; /* Firefox */
+ 		-webkit-transition: 1.5s ease; /* Chrome - Safari */
+ 		-o-transition: 1.5s ease; /* Opera */
+	}
+	.zoom:hover{
+		transform : scale(1.10);
+		-moz-transform : scale(1.10); /* Firefox */
+		-webkit-transform : scale(1.10); /* Chrome - Safari */
+		-o-transform : scale(1.10); /* Opera */
+		-ms-transform : scale(1.10); /* IE9 */
+	}
+	
+	.caja {
+		width:400px;
+		height:300px;
+	}
+	
+	.nose {
+	position:relative;
+	border:solid 5px #eee;
+	}
+	
+	.image {
+
+position: relative;
+
+width: 100%; /* for IE 6 */
+
+}
+
+h2 {
+
+position: absolute;
+
+top: 200px;
+
+left: 0;
+
+width: 100%;
+
+}
+</style>
+</head>
+<body>
+Formulario bÃ¡sico para buscar en Google<br />
+
+<form method="get" action="https://www.google.com/search">
+<input type="text" name="q" size="31" maxlength="255" value="" />
+
+<input type="submit" name="" value="Buscar" />
+</form>
+<br/>
+
+<form id="searchbox" method="get" action="https://www.google.com/search" target="google_window">
+					<input id="search" type="text" name="q" size="31" maxlength="255" value="">
+					<input id="submit" type="submit" value="Buscar">
+</form>
+
+<div class="caja">
+ <img src="img/4-Robo autos Puebla_5.jpg" class="nose" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=400;this.height=300;" width="400" height="300" alt="" />
+</div>
+
+ 
+ 
+ <div class="image">
+
+<img src="C:\Users\German\Documents\Facultad\Diseño de Sistemas\Cochelimpio 3\img\5-Robo autos Puebla_5.jpg" alt="Mi titulo de la imagen">
+
+ <h2><span>Floto encima de la imagen:<br />Soy un fantasma</span></h2>
+
+</div>
+
+</body>
+</html>

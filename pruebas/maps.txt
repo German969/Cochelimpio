@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<link href="css/main.css" rel="stylesheet" type="text/css">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Cochelimpio - Lavado Integral de Vehiculos</title>
+  <meta name="author" content="German Agustin Monzon">
+  
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+
+</head>
+
+<body>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.580866899879!2d-58.981202930913646!3d-27.451170123492382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450cf0b9b37e5d%3A0xcdb4d78281f5403c!2sCalle+French+414%2C+3500AHQ+Resistencia%2C+Chaco!5e0!3m2!1ses-419!2sar!4v1464563613069" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</body>
+
+</html>
