@@ -9,4 +9,8 @@ editando el txt
 
 escritorio yo
 
+<<<<<<< HEAD
 desde la otra compu
+=======
+rama1
+>>>>>>> refs/remotes/origin/rama1
