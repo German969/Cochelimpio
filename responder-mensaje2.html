@@ -11,6 +11,9 @@
   
   <link rel="stylesheet" type="text/css" href="engine1/style.css" />
   <script type="text/javascript" src="engine1/jquery.js"></script>
+  
+  <script src="js/move4.js"></script>
+  <script type="text/javascript" src="js/chat.js"></script>
 
 </head>
 
@@ -21,14 +24,16 @@
 <header>
 	
 	<div id="mainmenu-container">
-		<ul id="mainmenu">
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
-			<li><a href="tipousuario.html">LOGIN</a></li>
-			<li><a href="registro.html">Registrarse</a></li>
-		</ul>
+        <ul id="mainmenu">
+          <li><a href="index-ese.html">Inicio</a></li>
+          <li><a href="gestionarturnos.html">Turnos</a></li>
+		  <li><a href="mensajes.html">Mensajes</a></li>
+          <li><a href="contacto-cliente.html">Servicios</a></li>
+          <li><a href="contacto-cliente.html">Pedidos</a></li>
+        </ul>
 		
-		<a href="#"><span class="usuario"><i class=" icon-user"></i> Usuario: INVITADO</span></a> 
+		<span><a href="index.html" ><input id="im" type="button" class="cerrar btn btn-primary" value="Cerrar Sesion"> </a></span>
+		<div class="usuarioE" onclick="mover(this,document.getElementById('im'),900)"><i class=" icon-user"></i> Usuario: SERV EXT</div> 
 		
 	</div>
 	
@@ -36,21 +41,14 @@
 	<div id="logo">
 		
 		<div class="logo2" span="1">
-			<div class="izquierda">
-				<div id="cont_40fbdb0a6fdb9fcf4320abf42a69412e"><span id="h_40fbdb0a6fdb9fcf4320abf42a69412e"><a class="LinkWid" href="http://www.tiempo.com/resistencia.htm" target="_blank" style="font-family:Roboto; font-size:13px; color:#00ABEB;">El Tiempo en Resistencia</a></span><script type="text/javascript" async src="https://www.tiempo.com/wid_loader/40fbdb0a6fdb9fcf4320abf42a69412e"></script></div>
+			<div id="prueba-i">
+				<a href="index.html"><img src="img/logo4.jpg" alt="" width='300' title='Logo de Cochelimpio'></a>
 			</div>
 			
-			<div class="medio">
-				<a href="index.html"><img src="img/logo4.jpg" alt="" width='248' height='232' title='Logo de Cochelimpio'></a>
+
+			<div id="prueba-d">
+					<div id="cont_e5dade02f0af1c1b792ca30740b694e2"><span id="h_e5dade02f0af1c1b792ca30740b694e2"><a class="LinkWid" href="http://www.tiempo.com/resistencia.htm" target="_blank" style="font-family: &#34;Open Sans&#34;, Arial, Helvetica, sans-serif; font-size:13px; color:#00ABEB;">PLANIFIQUE&nbsp;SU&nbsp;LAVADO</a></span><script type="text/javascript" async src="https://www.tiempo.com/wid_loader/e5dade02f0af1c1b792ca30740b694e2"></script></div>
 			</div>
-			
-			<div class="derecha">
-				<br>
-					<form method="get" id="search" action="https://www.google.com/search" target="google_window">
-					<input name="q" type="text" size="40" placeholder="Buscar..." />
-				</form>
-			</div>
-		</div>
 		
 	</div>
 
@@ -59,67 +57,60 @@
 	</div>
 	
 </header>
-
-<div class="clearfix"></div>
+	<!-- header close -->
     
     <!-- subheader begin -->
 	<div id="subheader">
     	<div class="container">
     	  <div class="row">
           	<div class="span12">
-            	<h1>Inicio de sesi&oacuten</h1>
+            	<h1 class="lighter">Detalles del Mensaje</h1>
             </div>
           </div>
     	</div>
     </div>
-	<!-- subheader close -->  
-      
-	<!-- content begin -->
-  <div id="contentI">
+	
+  <div id="contentU">
     	<div class="container">
         	<div class="row">
-            	<div class="reservas-form">
+            	<div class="reservas-form tizq">
                     <div class="span12">
-                    <div class="row">
-						
-                        <h3 class="nosale title span12" align="center">Introduzca sus datos</h3>
-						<div class="span3"></div>
-                    	<div class="tizq span3">
-                            <span class="text-label"><i class=" icon-user"></i>Usuario</span>
-                            <input type="text">
-                        </div>
-						<div class="tizq span3">
-                            <span class="text-label"><i class=" icon-lock"></i>Contrase&ntildea</span>
-                            <input type="password" name="contraseña">                       
-                         </div>
-					
-					
-						<h3 class="nosale title span12"></h3>
-						<div class="span3"></div>
-						<div class="span3 btn-book-submit">
-							<a href="index-admin.html" ><input type="button" class="btn btn-primary" value="Iniciar"> </a>
-						</div>
-						<div class="span3 btn-book-submit">
-							<a href="registro.html" ><input type="button" class="btn btn-secundary" value="Registrase"> </a>
-						</div>
-					
-					
-										
-					</div>
-						
-</br>
-                    </div>
-					
-<div class="span12" align="center">Si olvid&oacute su usuario o contrase&ntildea contactese con Cochelimpio por los medios de contacto disponibles.</div>
-                    </div>
-                    
-            	</div>
-				
-            </div>
-			
-        </div>
+                    	<div class="row">
+							<h3 class="title span12 borderb">Datos Remitente</h3>	
+							<div class="span3">
+								<span class="text-label"><i class=" icon-user"></i>Apellido y Nombre</span>
+								<strong>Gonzalo Romero</strong>
+							</div>
+							<div class="span3">
+								<span class="text-label"><i class="icon-envelope-alt"></i>Email</span>
+								<strong>gonromore94@gmail.com</strong>
+							</div>
+                                                
+							<h3 class="title2 span12 bordert">Mensaje</h3>
+							<div class="span12"> 
+							   <span class="chat borderb bordert padt10 padb10">Hola buenas tardes, me dirijo a usted para felicitar a la empresa Cochelimpio, por la facilidad para solicitar turnos, y por el excelente servicio, mis mas cordiales saludos. Atte Director Gonzalo Romero.
+								<br/><span class="fechita">21/02/2016,   14:40</span> </span>                    
+							</div>
+		
+							<div id="rellenando"></div>
+							
+<div class="span8">
+		<label id="letra3">Responder</label>
+		<textarea cols="10" rows="10" name="" id="mimsjcito" class="full2"></textarea>
+</div>
 
-	
+                        
+										
+								<h3 class="title span12"></h3>
+								<div class="span3 btn-book-submit">
+									<input type="button" class="btn btn-primary" value="Responder" onclick="chatear()">
+								</div>
+						   </div>
+					</div>
+            	</div>
+            </div>
+        </div>
+	</div>
 	<!-- content close -->
     
 <!-- footer begin -->
@@ -180,3 +171,4 @@
 </body>
 
 </html>
+

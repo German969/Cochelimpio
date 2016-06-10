@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="engine1/style.css" />
   <script type="text/javascript" src="engine1/jquery.js"></script>
   
-  <script type="text/javascript" src="js/contacto.js"></script>
+  <script type="text/javascript" src="js/mensaje.js"></script>
 
 </head>
 
@@ -38,14 +38,21 @@
 	<div id="logo">
 		
 		<div class="logo2" span="1">
-			<div id="prueba-i">
-				<a href="index.html"><img src="img/logo4.jpg" alt="" width='300' title='Logo de Cochelimpio'></a>
+			<div class="izquierda">
+				<div id="cont_40fbdb0a6fdb9fcf4320abf42a69412e"><span id="h_40fbdb0a6fdb9fcf4320abf42a69412e"><a class="LinkWid" href="http://www.tiempo.com/resistencia.htm" target="_blank" style="font-family:Roboto; font-size:13px; color:#00ABEB;">El Tiempo en Resistencia</a></span><script type="text/javascript" async src="https://www.tiempo.com/wid_loader/40fbdb0a6fdb9fcf4320abf42a69412e"></script></div>
 			</div>
 			
-
-			<div id="prueba-d">
-					<div id="cont_e5dade02f0af1c1b792ca30740b694e2"><span id="h_e5dade02f0af1c1b792ca30740b694e2"><a class="LinkWid" href="http://www.tiempo.com/resistencia.htm" target="_blank" style="font-family: &#34;Open Sans&#34;, Arial, Helvetica, sans-serif; font-size:13px; color:#00ABEB;">PLANIFIQUE&nbsp;SU&nbsp;LAVADO</a></span><script type="text/javascript" async src="https://www.tiempo.com/wid_loader/e5dade02f0af1c1b792ca30740b694e2"></script></div>
+			<div class="medio">
+				<a href="index.html"><img src="img/logo4.jpg" alt="" width='248' height='232' title='Logo de Cochelimpio'></a>
 			</div>
+			
+			<div class="derecha">
+				<br>
+					<form method="get" id="search" action="https://www.google.com/search" target="google_window">
+					<input name="q" type="text" size="40" placeholder="Buscar..." />
+				</form>
+			</div>
+		</div>
 		
 	</div>
 
@@ -76,37 +83,35 @@
                 	<h4>Contactenos</h4>
 						Escribanos si quiere obtener m&aacutes informaci&oacuten o realizar alguna queja.<br/><br/>
                 	<div class="contact_form_holder">
-<form id="contacto" class="row" name="form1" method="" action="" onsubmit="return validacion()">
-
-	<div class="span4 pad2">
-		<label id="letra1">Apellido y Nombre <span class="req">*</span></label>
-		<input type="text" class="full" name="" id="nombrecito"/>
-	</div>
-	
-	<div class="span4 pad2">
-		<label id="letra2">Email <span class="req">*</span></label>
-		<input type="text" class="full" name="" id="emailcito"/>
-	</div>
-	
-	
-	<div class="span8">
-		<label id="letra3">Mensaje <span class="req">*</span></label>
-		<textarea cols="10" rows="10" name="" id="textito" class="full2"></textarea>
-	
-		<p id="btnsubmit" class="pad2t"><input type="submit" id="botoncito" value="Enviar" class="btn btn-large"/></p>
-	
-		<span class="req">*</span> Los campos son obligatorios.		
-	</div>
-	
-</form>
+						<form id="contacto" class="row" name="form1" method="post" action="#">
+					  
+						<div class="span4 pad2">
+							<label>Apellido y Nombre <span class="req">*</span></label>
+							<input type="text" class="full" name="name" id="name"/>
+						</div>
+						
+						<div class="span4 pad2">
+							<label>Email <span class="req">*</span></label>
+							<input type="text" class="full" name="email" id="email"/>
+						</div>
+						
+						
+						<div class="span8">
+						<label>Mensaje <span class="req">*</span></label>
+							<textarea cols="10" rows="10" name="message" id="message" class="full2"></textarea>
+							<p id="btnsubmit" class="pad2t"><input type="submit" id="send" value="Enviar" class="btn btn-large"/></p>  
+                            <span class="req">*</span> Los campos son obligatorios.             
+						</div>
+						
+							
+						</form>
 					</div>
             
                 
         	</div>
 			</div>
         </div>
-		
-	</div>
+    
 	<!-- content close -->
     
 <!-- footer begin -->

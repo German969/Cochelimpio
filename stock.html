@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+
+<link href="css/main.css" rel="stylesheet" type="text/css">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cochelimpio - Lavado Integral de Vehiculos</title>
+  <meta name="author" content="German Agustin Monzon">
+  
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  
+	<script src="js/move4.js"></script>
+	<script src="js/elim-prod.js"></script>
+	<script src="js/comp-prod.js"></script>
+	<script src="js/modif-p.js"></script>
+	<script src="js/acept-mod-p.js"></script>
+	<script src="js/agregar-p.js"></script>
+
+</head>
+
+<body>
+
+<div class="pagina">
+<div class="bloque">
+<header>
+	
+	<div id="mainmenu-container">
+		<ul id="mainmenu">
+		<li><a href="index-admin.html">Inicio</a></li>
+          <li><a href="stock.html">Stock</a></li>
+          <li><a href="informes.html">informes</a></li>
+          <li><a href="#">Empleados</a></li>
+          <li><a href="lavados.html">Lavados</a></li>
+		</ul>
+		
+		<span><a href="index.html" ><input id="im" type="button" class="cerrar btn btn-primary" value="Cerrar Sesion"> </a></span>
+		<div class="usuarioA" onclick="mover(this,document.getElementById('im'),850)"><i class=" icon-user"></i> Usuario: ADMINISTRADOR</div>
+				
+		
+	</div>
+	
+
+	<div id="logo">
+		
+		<div class="logo2" span="1">
+			<div id="prueba-i">
+				<a href="index.html"><img src="img/logo4.jpg" alt="" width='300' title='Logo de Cochelimpio'></a>
+			</div>
+			
+
+		<div id="prueba-d">
+					<div id="cont_e5dade02f0af1c1b792ca30740b694e2"><span id="h_e5dade02f0af1c1b792ca30740b694e2"><a class="LinkWid" href="http://www.tiempo.com/resistencia.htm" target="_blank" style="font-family: &#34;Open Sans&#34;, Arial, Helvetica, sans-serif; font-size:13px; color:#00ABEB;">PLANIFIQUE&nbsp;SU&nbsp;LAVADO</a></span><script type="text/javascript" async src="https://www.tiempo.com/wid_loader/e5dade02f0af1c1b792ca30740b694e2"></script></div>
+		</div>
+		
+	</div>
+
+	<div class="linea-texto">
+		LA MEJOR ATENCION ONLINE LAS 24 HORAS
+	</div>
+	
+</header>
+
+	<div id="subheader">
+    	<div class="container">
+    	  <div class="row">
+          	<div class="span12">
+            	<h1>Stock</h1>
+            </div>
+          </div>
+    	</div>
+    </div> 
+    
+    <div class="clearfix"></div>
+    
+	
+
+    <div id="contentM">
+    	<div class="achicado container">
+        	
+			
+            
+
+				<div class="table-responsive">
+				<table id="listadop" class="centrado borderb table table-striped">
+				  <thead>
+					<tr>
+					  <th>Numero</th>
+					  <th>Codigo Producto</th>
+					  <th>Nombre</th>
+					  <th>Cantidad</th>
+
+					  <th> </th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr id="p1">
+						<th id="f1c1" scope="row">1</th>
+						<td id="f1c2">7865</td>
+						<td id="f1c3">Producto1 </td>
+						<td id="f1c4">89</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p1'))"></td>
+						<td id="M1"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(1)"></td>
+					</tr>
+					<tr id="p2">
+						<th id="f2c1" scope="row">2</th>
+						<td id="f2c2">5343</th>
+						<td id="f2c3">Producto2</td>
+						<td id="f2c4">12</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p2'))"></td>
+						<td id="M2"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(2)"></td>
+					</tr>
+					<tr id="p3">
+						<th id="f3c1" scope="row">3</th>
+						<td id="f3c2">3542</td>
+						<td id="f3c3">Producto3</td>
+						<td id="f3c4">21</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p3'))"></td>
+						<td id="M3"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(3)"></td>
+					</tr>
+					<tr id="p4">
+						<th id="f4c1" scope="row">4</th>
+						<td id="f4c2">6654</td>
+						<td id="f4c3">Producto4</td>
+						<td id="f4c4">155</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p4'))"></td>
+						<td id="M4"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(4)"></td>
+					</tr>
+					<tr id="p5">
+						<th id="f5c1" scope="row">5</th>
+						<td id="f5c2">7894</td>
+						<td id="f5c3">Producto5</td>
+						<td id="f5c4">31</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p5'))"></td>
+						<td id="M5"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(5)"></td>
+					</tr>
+					
+					<input type="text" id="last" value="5">
+					<input type="text" id="tot" value="5">
+					
+				  </tbody>
+				</table>
+				</div>
+			  
+        <div class="span3 btn-book-submit">
+              <a href="index-admin.html"><input type="button" class="btn btn-primary" value="Imprimir"> </a>
+        </div>
+        <div class="span3 btn-book-submit">
+              <input type="button" class="btn btn-secundary" value="Agregar Producto" onclick="agregar()">
+        </div>        
+				
+             
+    	</div>
+        
+        </div>
+	
+	<footer>
+  		<div class="cont3">
+			<div class="row">
+				
+				<div class="nosotros">
+                <div class="sin-margen span3">
+                	<h3 class="negro">Nosotros</h3>
+                    Cochelimpio nació como un proyecto de 5 estudiantes de la ciudad de Resistencia, Chaco, y actualmente gestiona mas de 20 sucursales en toda la región.
+                </div>
+				</div>
+				
+				<div class="contactos-b">
+				<div class="sin-margen span3">
+                	<h3 class="negro">Contactos</h3>
+                    	<address>
+                         French 414 - Resistencia - Chaco
+                        <span><strong>Tel&eacutefono: </strong> 0362 - 4027867</span>
+                        <span><strong>Fax: </strong> 0362 - 4027867</span>
+                        <span><strong>Email: </strong><a id="correo" href="atencion.cliente@cochelimpio.com"> atencion.cliente@cochelimpio.com</a></span>
+						</address>   
+                </div>
+				</div>
+				
+				<div class="iconos-social">
+					<h3 class="margen-menor negro">Síguenos</h3>
+					<ul id="lista-social">
+						<li><a href="https://www.facebook.com/"><img src="img/social-icons/facebook.png" onmouseover="this.src='img/social-icons/facebook2.png';" onmouseout="this.src='img/social-icons/facebook.png';"/></a></li>
+						<li><a href="https://twitter.com/"><img src="img/social-icons/twitter.png"  onmouseover="this.src='img/social-icons/twitter2.png';" onmouseout="this.src='img/social-icons/twitter.png';"/></a></li>
+						<li><a href="https://plus.google.com/"><img src="img/social-icons/gplus.png"  onmouseover="this.src='img/social-icons/gplus2.png';" onmouseout="this.src='img/social-icons/gplus.png';"/></a></li>
+						<li><a href="https://www.youtube.com/"><img src="img/social-icons/youtube.png"  onmouseover="this.src='img/social-icons/youtube2.png';" onmouseout="this.src='img/social-icons/youtube.png';"/></a></li>
+					</ul>
+				</div>
+				
+			</div>
+        </div>
+		
+		<div id="subfooter">
+        	<div class="container">
+                <div class="row" class="span12">
+                	<div class="span10.2">
+						<div class="copyr">
+                    	Copyiright 2016 &copy; COCHELIMPIO. All rights reserved.
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+   	</footer>
+	<!-- footer close -->
+   
+</div>
+</div>
+	
+</body>
+
+</html>

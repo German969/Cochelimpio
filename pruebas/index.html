@@ -1,17 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<!DOCTYPE html>
+<html lang="es">
 
 <link href="css/main.css" rel="stylesheet" type="text/css">
 
 <head>
+
   <meta charset="utf-8">
   <title>Cochelimpio - Lavado Integral de Vehiculos</title>
   <meta name="author" content="German Agustin Monzon">
   
   <link rel="stylesheet" type="text/css" href="engine1/style.css" />
   <script type="text/javascript" src="engine1/jquery.js"></script>
-  
-	<script src="js/move4.js"></script>
 
 </head>
 
@@ -23,14 +22,13 @@
 	
 	<div id="mainmenu-container">
 		<ul id="mainmenu">
-          <li><a href="index-cliente.html">Inicio</a></li>
-          <li><a href="turnos.html">Turnos</a></li>
-          <li><a href="contacto-cliente.html">Contacto</a></li>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="session.html">LOGIN</a></li>
+			<li><a href="registro.html">Registrarse</a></li>
 		</ul>
 		
-		<span><a href="index.html" ><input id="im" type="button" class="cerrar btn btn-primary" value="Cerrar Sesion"> </a></span>
-		<div class="usuarioC" onclick="mover(this,document.getElementById('im'),900)"><i class=" icon-user"></i> Usuario: CLIENTE</div>
-				
+		<a href="session.html"><span class="usuario"><i class=" icon-user"></i> Usuario: INVITADO</span></a> 
 		
 	</div>
 	
@@ -38,14 +36,21 @@
 	<div id="logo">
 		
 		<div class="logo2" span="1">
-			<div id="prueba-i">
-				<a href="index.html"><img src="img/logo4.jpg" alt="" width='300' title='Logo de Cochelimpio'></a>
+			<div class="izquierda">
+				<div id="cont_40fbdb0a6fdb9fcf4320abf42a69412e"><span id="h_40fbdb0a6fdb9fcf4320abf42a69412e"><a class="LinkWid" href="http://www.tiempo.com/resistencia.htm" target="_blank" style="font-family:Roboto; font-size:13px; color:#00ABEB;">El Tiempo en Resistencia</a></span><script type="text/javascript" async src="https://www.tiempo.com/wid_loader/40fbdb0a6fdb9fcf4320abf42a69412e"></script></div>
 			</div>
 			
-
-			<div id="prueba-d">
-					<div id="cont_e5dade02f0af1c1b792ca30740b694e2"><span id="h_e5dade02f0af1c1b792ca30740b694e2"><a class="LinkWid" href="http://www.tiempo.com/resistencia.htm" target="_blank" style="font-family: &#34;Open Sans&#34;, Arial, Helvetica, sans-serif; font-size:13px; color:#00ABEB;">PLANIFIQUE&nbsp;SU&nbsp;LAVADO</a></span><script type="text/javascript" async src="https://www.tiempo.com/wid_loader/e5dade02f0af1c1b792ca30740b694e2"></script></div>
+			<div class="medio">
+				<a href="index.html"><img src="img/logo4.jpg" alt="" width='248' height='232' title='Logo de Cochelimpio'></a>
 			</div>
+			
+			<div class="derecha">
+				<br>
+					<form method="get" id="search" action="https://www.google.com/search" target="google_window">
+					<input name="q" type="text" size="40" placeholder="Buscar..." />
+				</form>
+			</div>
+		</div>
 		
 	</div>
 
@@ -149,8 +154,8 @@
 		<div class="tit1">
 		<span class="enctes">
 		<h3 class="dir2">En Corrientes</h3></span>
-		<span class="enfor">
-		<h3 class="dir3">En Formosa</h3></span>
+		<!-- footer close <span class="enfor">
+		<h3 class="dir3">En Formosa</h3></span> -->
 		
 		</div>
 		
@@ -188,27 +193,34 @@
 
 </div>
 </div>
-
+</div>
 
 	<footer>
   		<div class="cont3">
 			<div class="row">
+			
+			
 				
 				<div class="nosotros">
                 <div class="sin-margen span3">
-                	<h3 class="negro">Nosotros</h3>
-                    Cochelimpio nació como un proyecto de 5 estudiantes de la ciudad de Resistencia, Chaco, y actualmente gestiona mas de 20 sucursales en toda la región.
+                	<h3 class="negro">Sobre Nosotros</h3>
+                    Cochelimpio nació como un proyecto de 5 estudiantes de Ingeniería de la ciudad de Resistencia, Chaco, y actualmente gestiona mas de 20 sucursales en varias provincias del Noreste Argentino. Nuestro objetivo es otorgar una gran variedad de servicios de limpieza de automóviles a la mayor cantidad de clientes de la manera más eficiente posible buscando siempre la felicidad de la gente.
                 </div>
 				</div>
 				
+			
+			
+			
+			
+			
 				<div class="contactos-b">
 				<div class="sin-margen span3">
-                	<h3 class="negro">Contactos</h3>
+                	<h3 class="negro">Atención al  Cliente</h3>
                     	<address>
                          French 414 - Resistencia - Chaco
                         <span><strong>Tel&eacutefono: </strong> 0362 - 4027867</span>
                         <span><strong>Fax: </strong> 0362 - 4027867</span>
-                        <span><strong>Email: </strong><a id="correo" href="atencion.cliente@cochelimpio.com"> atencion.cliente@cochelimpio.com</a></span>
+                        <span><strong>Email: </strong><a id="correo2" href=" atencion.cliente@cochelimpio.com">atencion.cliente@cochelimpio.com</a></span>
 						</address>   
                 </div>
 				</div>
@@ -222,6 +234,8 @@
 						<li><a href="https://www.youtube.com/"><img src="img/social-icons/youtube.png"  onmouseover="this.src='img/social-icons/youtube2.png';" onmouseout="this.src='img/social-icons/youtube.png';"/></a></li>
 					</ul>
 				</div>
+				
+			
 				
 			</div>
         </div>
