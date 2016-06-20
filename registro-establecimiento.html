@@ -11,6 +11,7 @@
   
   <link rel="stylesheet" type="text/css" href="engine1/style.css" />
   <script type="text/javascript" src="engine1/jquery.js"></script>
+  <script type="text/javascript" src="js/reg-emp.js"></script>
 
 </head>
 
@@ -70,64 +71,67 @@
   <div id="contentU">
     	<div class="container">
         	<div class="row">
-            	<div class="reservas-form2">
+            	<form class="reservas-form2" onsubmit="return registrare()">
                     <div class="span12">
                     	<div class="row">
 						<h3 class="izq title span12">Datos de la Empresa</h3>
                     	<div class="spanr">
-                            <i class=" icon-user"></i><input class="i90" name="q" type="text" size="40" placeholder="  NOMBRE DE LA EMPRESA *"/>
+                            <i class=" icon-user"></i><input id="i1" class="i90" name="q" type="text" size="40" placeholder="  NOMBRE DE LA EMPRESA *"/>
                         </div>
 						<div class="spanr">
-                            <i class="icon-list-alt"></i><input class="i90" name="q" type="text" size="40" placeholder="  CUIT *"/>
+                            <i class="icon-list-alt"></i><input id="i2" class="i90" name="q" type="text" size="40" placeholder="  CUIT * (00-00000000-00)"/>
                         </div>
 						<div class="spanr">
-                            <i class="icon-phone"></i><input class="i90" name="q" type="text" size="40" placeholder="  TELEFONO *"/>
+                            <i class="icon-phone"></i><input id="i3" class="i90" name="q" type="text" size="40" placeholder="  TELEFONO * (9 digitos)"/>
                         </div>
                         <h3 class="izq title span12">Datos del Representante</h3>
                     	<div class="spanr">
-                            <i class=" icon-user"></i><input class="i90" name="q" type="text" size="40" placeholder="  APELLIDO Y NOMBRE *"/>
+                            <i class=" icon-user"></i><input id="i4" class="i90" name="q" type="text" size="40" placeholder="  APELLIDO Y NOMBRE *"/>
                         </div>
 						<div class="spanr">
-                            <i class="icon-lock"></i><input class="i90" name="q" type="text" size="40" placeholder="  CONTRASEÑA *"/>
+                            <i class="icon-lock"></i><input id="i5" class="i90" name="q" type="password" size="40" placeholder="  CONTRASEÑA *"/>
                         </div>
 						<div class="spanr">
-                            <i class="icon-lock"></i><input class="i90" name="q" type="text" size="40" placeholder="  REPETIR CONTRASEÑA *"/>
+                            <i class="icon-lock"></i><input id="i6" class="i90" name="q" type="password" size="40" placeholder="  REPETIR CONTRASEÑA *"/>
                         </div>
 						
 						<h3 class="izq title span12">Datos de contacto</h3>
                         <div class="spanr">
-                            <i class="icon-road"></i><input class="i90" name="q" type="text" size="40" placeholder="  DIRECCION *"/>
+                            <i class="icon-road"></i><input id="i7" class="i90" name="q" type="text" size="40" placeholder="  DIRECCION *"/>
                         </div>
 						<div class="spanr">
-                            <i class="icon-road"></i><input class="i90" name="q" type="text" size="40" placeholder="  LOCALIDAD *"/>
+                            <i class="icon-road"></i><input id="i8" class="i90" name="q" type="text" size="40" placeholder="  LOCALIDAD *"/>
                         </div>
 						<div class="spanr">
-                            <i class="icon-envelope-alt"></i><input class="i90" name="q" type="text" size="40" placeholder="  EMAIL *"/>
+                            <i class="icon-envelope-alt"></i><input id="i9" class="i90" name="q" type="text" size="40" placeholder="  EMAIL *"/>
                         </div>
                         <div class="spanr">
-                            <i class="icon-phone"></i><input class="i90" name="q" type="text" size="40" placeholder="  TELEFONO *"/>
+                            <i class="icon-phone"></i><input id="i10" class="i90" name="q" type="text" size="40" placeholder="  TELEFONO * (9 digitos)"/>
                         </div>
                                 
 						<h3 class="izq title span12">Datos del Presupuesto</h3>
                         <div class="spanr">
-                            <span class="text-label">Tipo de Vehiculos *</span>
+                            <span class="text-label" id="i11o">Tipo de Vehiculos *</span>
                               <div class="spanr">
-                                <select>
-                                    <option>Vehiculo tipo 1</option>
-                                    <option>Vehiculo tipo 2</option>
-                                    <option>Vehiculo tipo 3</option>
+                                <select id="i11">
+									<option value="">- Selecciona un valor -</option>
+                                    <option value="1">Vehiculo tipo 1</option>
+                                    <option value="2">Vehiculo tipo 2</option>
+                                    <option value="3">Vehiculo tipo 3</option>
                                 </select>
                             </div>  <div class="clearfix"></div> 
                         </div>
 
                         <div class="spanr">
                             <span class="text-label"></i>Cantidad de Vehiculos *</span>  
-                            <input id="i90" name="q" type="text" size="40" placeholder="  CANTIDAD DE VEHICULOS *"/>
+                            <input id="i12" name="q" type="number" size="40" placeholder="  CANTIDAD DE VEHICULOS *"/>
                         </div> <div class="clearfix"></div>
+						
                         <div class="spanr">
-                            <span class="text-label"></i>Frecuencia de Lavados *</span>
+                            <span class="text-label" id="i13o"></i>Frecuencia de Lavados *</span>
                             <div class="spanr">
-                                <select>
+                                <select id="i13">
+									<option value="">- Selecciona un valor -</option>
                                     <option>1 semana</option>
                                     <option>2 semanas</option>
                                     <option>Otro.. </option>
@@ -136,9 +140,10 @@
                             
                         </div>
                          <div class="spanr">
-                            <span class="text-label"></i>Tipos de Lavado *</span>
+                            <span class="text-label" id="i14o"></i>Tipos de Lavado *</span>
                             <div class="spanr">
-                                <select>
+                                <select id="i14">
+									<option value="">- Selecciona un valor -</option>
                                     <option>Lavado tipo 1</option>
                                     <option>Lavado tipo 2</option>
                                     <option>Lavado tipo 3</option>
@@ -150,7 +155,7 @@
 					   
                        <h3 class="title span12"></h3>
 						<div class="span3 btn-book-submit">
-							<a href="alta-establecimiento-confirmada.html" ><input type="button" class="btn btn-primary" value="Confirmar"> </a>
+							<input type="Submit" class="btn btn-primary" value="Confirmar">
 						</div>
 						<div class="span3 btn-book-submit">
 							<a href="index.html" ><input type="button" class="btn btn-secundary" value="Cancelar"> </a>
@@ -164,7 +169,7 @@
 							<div><span class="req">*</span> Los campos son obligatorios.</div>
 					</div>
                     
-            	</div>
+            	</form>
             </div>
         </div>
 	</div>

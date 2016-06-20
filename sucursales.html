@@ -11,6 +11,7 @@
   
   <link rel="stylesheet" type="text/css" href="engine1/style.css" />
   <script type="text/javascript" src="engine1/jquery.js"></script>
+  <script type="text/javascript" src="js/pestañas-suc.js"></script>
 
 </head>
 
@@ -53,44 +54,47 @@
 	
 </header>
 
-    
+<div class="clearfix"></div>
 
-	<div id="subheader">
-    	<div class="container">
-    	  <div class="row">
-          	<div class="span12">
-            	<h1>Alta de Establecimiento</h1>
-            </div>
-          </div>
-    	</div>
-    </div>
- 
-      
+<div id="content3">
 
-  <div id="content">
-    	<div class="container">
-        	<div class="row">
-            	<div class="sin-pad reservas-form">
-                    <div class="sin-margen span12">
-                    	<div class="row">
-							
-							<div class="span12">
-								
-								<h4> El alta se ha realizado con éxito.</h4> 
-								<h4>Una vez revisados los datos recibirá un email de confirmación, con su nombre de usuario y contraseña. </h4>
-							</div>
-							
-                                                
-							
-								
-						</div>
-					</div>
-            	</div>
-            </div>
-        </div>
-	</div>
+<ul class="sin-margen nav nav-tabs">
+  <li role="presentation" id="pes1" class="active" onclick="selecp(this,'pes', '1')"><a href="#">Centros de Lavado Integral</a></li>
+  <li role="presentation" id="pes2" class="" onclick="selecp(this,'pes', '2')"><a href="sucursales3.html">Kioscos de Lavado</a></li>
+  <li role="presentation" id="pes3" class="" onclick="selecp(this,'pes', '3')"><a href="sucursales2.html">Estaciones Móviles</a></li>
+</ul>
 
-    
+<div id="content-tab">
+
+<div class="list-group">
+  <a id="suc1" href="#" class="list-group-item active" onclick="selecp(this, 'suc', '1' )">
+    Cochelimpio "UTN"
+  </a>
+  <a id="suc2" href="#" class="list-group-item" onclick="selecp(this, 'suc', '2' )">Cochelimpio "Marconi"</a>
+  <a id="suc3" href="#" class="list-group-item" onclick="selecp(this, 'suc', '3' )">Cochelimpio "Chaco"</a>
+  <a id="suc4" href="#" class="list-group-item" onclick="selecp(this, 'suc', '4' )">Cochelimpio "Corrientes"</a>
+  <a id="suc5" href="#" class="list-group-item" onclick="selecp(this, 'suc', '5' )">Cochelimpio "Sarmiento"</a>
+  <a id="suc6" href="#" class="list-group-item" onclick="selecp(this, 'suc', '6' )">Cochelimpio "Armenia"</a>
+</div>
+
+<div id="cont-mapa">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.581248939097!2d-58.98139068534388!3d-27.45115822248597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450cf0b9b37e5d%3A0xcdb4d78281f5403c!2sCalle+French+414%2C+3500AHQ+Resistencia%2C+Chaco!5e0!3m2!1ses-419!2sar!4v1465949591841" width="400" height="259" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</div>
+
+<div class="texto-exp">
+
+Los Centros integrales son lugares especializados en limpieza ecológica, in situ y al instante. 
+Para poder obtener nuestros servicios, el cliente deberá solicitar turno (con una semana de antelación) para ser atendido por nuestros empleados. 
+Mientras espera por su auto, el cliente podrá disfrutar de una espera agradable en nuestro bar que cuenta con una excelente cafetería, variadas opciones para almorzar, revistas, diarios y conexión Wi-Fi.
+
+</div>
+
+</div>
+
+</div>
+
 
 	<footer>
   		<div class="cont3">
@@ -158,4 +162,3 @@
 </body>
 
 </html>
-

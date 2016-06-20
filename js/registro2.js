@@ -12,6 +12,7 @@ function registrar() {
 	v8 = document.getElementById("r8").value;
 	v9 = document.getElementById("cond");
 	b = true;
+	c = true;
 	
 	if (v1 == null || v1.length == 0 || /^\s+$/.test(v1)) {
     // Si no se cumple la condicion...
@@ -42,10 +43,10 @@ function registrar() {
   }
   
   if ( v3 != v4 ) {
-	  document.getElementById("r3").className += " placeh-rojo";
-	  document.getElementById("r4").className += " placeh-rojo";
+	  document.getElementById("r3").style.color = 'rojo';
+	  document.getElementById("r4").style.color = 'rojo';
 	  alert('[ERROR] Las contraseñas no coinciden');
-	  return false;
+	  c = false;
   }
   
   	if (v5 == null || v5.length == 0 || /^\s+$/.test(v5)) {
@@ -67,6 +68,12 @@ function registrar() {
 //cambiar color
 	document.getElementById("r7").className += " placeh-rojo";
 	b = false;
+  } else
+  
+  if( !(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(v7)) ) {
+	 document.getElementById("r7").style.color = 'red';
+	 alert('[ERROR] Debe introducir un email válido');
+	 c = false;
   }
   
   	if (v8 == null || v8.length == 0 || /^\s+$/.test(v8)) {
@@ -74,13 +81,19 @@ function registrar() {
 //cambiar color
 	document.getElementById("r8").className += " placeh-rojo";
 	b = false;
-  }
+  } else
+  
+  if( !(/^\d{9}$/.test(v8)) ) {
+	document.getElementById("r8").style.color = 'red';  
+	alert('[ERROR] Debe introducir un numero de telefono válido (9 cifras seguidas)');
+	c = false;
+}
   
   	if ( !v9.checked ) {
     // Si no se cumple la condicion...
-//cambiar color
+	document.getElementById("term").style.color = 'red';
 	alert('[ERROR] Debe aceptar los términos y condiciones para poder registrarse');
-    return false;
+    c = false;
   }
   
   if ( !b ) {
@@ -88,6 +101,10 @@ function registrar() {
 	  alert('[ERROR] Debe rellenar todos los campos');
 	  return false;
 	  
+  }
+  
+  if ( !c ) {
+	  return false;
   }
   
   	alert('Se ha registrado con éxito.');
