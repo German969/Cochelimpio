@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 
 <link href="css/main.css" rel="stylesheet" type="text/css">
 
 <head>
-
   <meta charset="utf-8">
   <title>Cochelimpio - Lavado Integral de Vehiculos</title>
   <meta name="author" content="German Agustin Monzon">
@@ -12,8 +11,10 @@
   <link rel="stylesheet" type="text/css" href="engine1/style.css" />
   <script type="text/javascript" src="engine1/jquery.js"></script>
   
-  <script src="js/move4.js"></script>
-  <script type="text/javascript" src="js/contacto.js"></script>
+	<script src="js/move4.js"></script>
+	<script type="text/javascript" src="js/redir-s.js"></script>
+	<script type="text/javascript" src="js/check.js"></script>
+	<script type="text/javascript" src="pruebas/obt-fech.js"></script>
 
 </head>
 
@@ -24,14 +25,15 @@
 <header>
 	
 	<div id="mainmenu-container">
-        <ul id="mainmenu">
-          <li><a href="index-empresa.html">Inicio</a></li>
-          <li><a href="presupuesto.html">Presupuesto</a></li>
-          <li><a href="contacto-empresa.html">Contacto</a></li> 
-        </ul>
+		<ul id="mainmenu">
+          <li><a href="index-cliente.html">Inicio</a></li>
+          <li><a href="turnos.html">Turnos</a></li>
+          <li><a href="contacto-cliente.html">Contacto</a></li>
+		</ul>
 		
 		<span><a href="index.html" ><input id="im" type="button" class="cerrar btn btn-primary" value="Cerrar Sesion"> </a></span>
-		<div class="usuarioE" onclick="mover(this,document.getElementById('im'),900)"><i class=" icon-user"></i> Usuario: EMPRESA</div> 
+		<div class="usuarioC" onclick="mover(this,document.getElementById('im'),900)"><i class=" icon-user"></i> Usuario: CLIENTE</div>
+				
 		
 	</div>
 	
@@ -54,80 +56,83 @@
 		LA MEJOR ATENCION ONLINE LAS 24 HORAS
 	</div>
 	
-</header>	<!-- header close -->
-    
-    <!-- subheader begin -->
+</header>
+
+<div class="clearfix"></div>
+
 	<div id="subheader">
     	<div class="container">
     	  <div class="row">
           	<div class="span12">
-            	<h1>Contactos</h1>
+            	<h1>Solicitar Turno</h1>
             </div>
           </div>
     	</div>
     </div>
 	<!-- subheader close -->  
-        
-   
-    
+      
 	<!-- content begin -->
-    <div id="contentC">
-    	<div class="container margen1">
+  <div id="contentU">
+    	<div class="container">
         	<div class="row">
-            	<div class="span8 izq">
-                	<h4>Contactenos</h4>
-						Escribanos si quiere obtener m&aacutes informaci&oacuten o realizar alguna queja.<br/><br/>
-                	<div class="contact_form_holder">
-						<form id="contacto" class="row" name="form1" method="" action="" onsubmit="return validacion()">
+            	<form class="reservas-form2" onsubmit="return resert()">
+                    <div class="span12">
+                    	<div class="row">
+                        <h3 class="izq title span12">Consultar disponibilidad</h3>
+						<div class="spanr">
+                            <i class="icon-calendar iconm"></i><input id="r1" class="i90" name="q" type="date" size="40" placeholder="  FECHA *"/>
+                        </div>
+                    	<div class="spanr">
+                            <i class="icon-time iconm"></i><input id='r2' type="time" name="time" placeholder="hrs:mins" pattern="^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$" class="inputs time" required>
+                        </div>
+						<div class="span3 btn-book-submit">
+							<input type="button" class="btn btn-primary" value="Consultar" onclick='compd()'>
+						</div>
+						<div id='i1' class="spanri">
+                            
+                        </div>
+						<div class="clearfix"></div>
+						
+						<h3 class="izq title span12">Reservar el Turno</h3>
+						<div class="spanr">
+                            <i class="icon-calendar iconm"></i><input id="r3" class="i90" name="q" type="date" size="40" placeholder="  FECHA *"/>
+                        </div>
+                    	<div class="spanr">
+                            <i class="icon-time iconm"></i><input id='r4' type="time" name="time" placeholder="hrs:mins" pattern="^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$" class="inputs time" required>
+                        </div>
+						<div class="span3 btn-book-submit">
+							<input type="submit" class="btn btn-primary" value="Reservar">
+						</div>
+						<div class="clearfix"></div>
 
-
-	<div class="span8">
-		<label id="letra3">Mensaje <span class="req">*</span></label>
-		<textarea cols="10" rows="10" name="" id="textito" class="full2"></textarea>
-	
-		<p id="btnsubmit" class="pad2t"><input type="submit" id="botoncito" value="Enviar" class="btn btn-large" onclick="Javascript: alert('Mensaje enviado con exito')"/></p>
-	
-		<span class="req">*</span> Los campos son obligatorios.		
-	</div>
-	
-</form>
 
 					</div>
-            
-                
-        	</div>
-			</div>
+                    
+            	</form>
+            </div>
         </div>
-    
-	<!-- content close -->
-    
-<!-- footer begin -->
+	</div>
+
+
 	<footer>
   		<div class="cont3">
 			<div class="row">
-			
-			
 				
 				<div class="nosotros">
                 <div class="sin-margen span3">
-                	<h3 class="negro">Sobre Nosotros</h3>
+                	<h3 class="negro">Nosotros</h3>
                     Cochelimpio nació como un proyecto de 5 estudiantes de la ciudad de Resistencia, Chaco, y actualmente gestiona mas de 20 sucursales en toda la región.
                 </div>
 				</div>
 				
-			
-			
-			
-			
-			
 				<div class="contactos-b">
 				<div class="sin-margen span3">
-                	<h3 class="negro">Atención al  Cliente</h3>
+                	<h3 class="negro">Contactos</h3>
                     	<address>
                          French 414 - Resistencia - Chaco
                         <span><strong>Tel&eacutefono: </strong> 0362 - 4027867</span>
                         <span><strong>Fax: </strong> 0362 - 4027867</span>
-                        <span><strong>Email: </strong><a id="correo2" href=" atencion.cliente@cochelimpio.com">atencion.cliente@cochelimpio.com</a></span>
+                        <span><strong>Email: </strong><a id="correo" href="atencion.cliente@cochelimpio.com"> atencion.cliente@cochelimpio.com</a></span>
 						</address>   
                 </div>
 				</div>
@@ -141,8 +146,6 @@
 						<li><a href="https://www.youtube.com/"><img src="img/social-icons/youtube.png"  onmouseover="this.src='img/social-icons/youtube2.png';" onmouseout="this.src='img/social-icons/youtube.png';"/></a></li>
 					</ul>
 				</div>
-				
-			
 				
 			</div>
         </div>

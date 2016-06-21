@@ -1366,3 +1366,55 @@ tr input {
 .marb1 {
 	margin-bottom:10px;
 }
+
+#diat, #semt, #mest {
+	width:100px;
+	height:25px;
+}
+
+.ftur {
+	font-size:16px;
+	padding: 10px 0 10px 0;
+}
+
+.fturl1, .fturl2, .fturl3 {
+	padding: 0 10px 0 10px;
+}
+
+#checkno {
+	background-color:#746586;
+	width:10px;
+	height:10px;
+}
+
+.spanri {
+	width:30px;
+	position:relative;
+	bottom:20px;
+}
+
+.iconch {
+	font-size:20px;
+}
+
+.checkd {
+	position:relative;
+	top:5px;
+	right:30px;
+	color:#088A08;
+	font-size:18px;
+	font-weight:bold;
+}
+
+.checknd {
+	position:relative;
+	top:5px;
+	right:30px;
+	color:#B40404;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#r2:focus, #r4:focus {
+	border-color:rgba(82, 168, 236, 0.8);
+}

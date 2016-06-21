@@ -13,7 +13,8 @@
   <script type="text/javascript" src="engine1/jquery.js"></script>
   
   <script src="js/move4.js"></script>
-  <script type="text/javascript" src="js/contacto.js"></script>
+  <script type="text/javascript" src="js/redir-s.js"></script>
+  <script type="text/javascript" src="js/presup.js"></script>
 
 </head>
 
@@ -54,54 +55,95 @@
 		LA MEJOR ATENCION ONLINE LAS 24 HORAS
 	</div>
 	
-</header>	<!-- header close -->
-    
-    <!-- subheader begin -->
+</header>
+
+<div class="clearfix"></div>
+
 	<div id="subheader">
     	<div class="container">
     	  <div class="row">
           	<div class="span12">
-            	<h1>Contactos</h1>
+            	<h1>Solicitud de Presupuesto</h1>
             </div>
           </div>
     	</div>
     </div>
 	<!-- subheader close -->  
-        
-   
-    
+      
 	<!-- content begin -->
-    <div id="contentC">
-    	<div class="container margen1">
+  <div id="contentU">
+    	<div class="container">
         	<div class="row">
-            	<div class="span8 izq">
-                	<h4>Contactenos</h4>
-						Escribanos si quiere obtener m&aacutes informaci&oacuten o realizar alguna queja.<br/><br/>
-                	<div class="contact_form_holder">
-						<form id="contacto" class="row" name="form1" method="" action="" onsubmit="return validacion()">
+            	<form class="reservas-form2" onsubmit="return presup()">
+                    <div class="span12">
+                    	<div class="row">
+						
+                                
+						<h3 class="izq title span12">Datos del Presupuesto</h3>
+                        <div class="spanr">
+                            <span class="text-label" id="i11o">Tipo de Vehiculos *</span>
+                              <div class="spanr">
+                                <select id="i11">
+									<option value="">- Selecciona un valor -</option>
+                                    <option value="1">Vehiculo tipo 1</option>
+                                    <option value="2">Vehiculo tipo 2</option>
+                                    <option value="3">Vehiculo tipo 3</option>
+                                </select>
+                            </div>  <div class="clearfix"></div> 
+                        </div>
 
-
-	<div class="span8">
-		<label id="letra3">Mensaje <span class="req">*</span></label>
-		<textarea cols="10" rows="10" name="" id="textito" class="full2"></textarea>
-	
-		<p id="btnsubmit" class="pad2t"><input type="submit" id="botoncito" value="Enviar" class="btn btn-large" onclick="Javascript: alert('Mensaje enviado con exito')"/></p>
-	
-		<span class="req">*</span> Los campos son obligatorios.		
-	</div>
-	
-</form>
-
+                        <div class="spanr">
+                            <span class="text-label"></i>Cantidad de Vehiculos *</span>  
+                            <input id="i12" name="q" type="number" size="40" placeholder="  CANTIDAD DE VEHICULOS *"/>
+                        </div> <div class="clearfix"></div>
+						
+                        <div class="spanr">
+                            <span class="text-label" id="i13o"></i>Frecuencia de Lavados *</span>
+                            <div class="spanr">
+                                <select id="i13">
+									<option value="">- Selecciona un valor -</option>
+                                    <option>1 semana</option>
+                                    <option>2 semanas</option>
+                                    <option>Otro.. </option>
+                                </select> <div class="clearfix"></div>
+                            </div>   
+                            
+                        </div>
+                         <div class="spanr">
+                            <span class="text-label" id="i14o"></i>Tipos de Lavado *</span>
+                            <div class="spanr">
+                                <select id="i14">
+									<option value="">- Selecciona un valor -</option>
+                                    <option>Lavado tipo 1</option>
+                                    <option>Lavado tipo 2</option>
+                                    <option>Lavado tipo 3</option>
+                                </select>
+                            </div>  <div class="clearfix"></div>
+                        </div>
+							
+					   
+					   
+                       <h3 class="title span12"></h3>
+						<div class="span3 btn-book-submit">
+							<input type="Submit" class="btn btn-primary" value="Confirmar">
+						</div>
+						<div class="span3 btn-book-submit">
+							<a href="index.html" ><input type="button" class="btn btn-secundary" value="Cancelar"> </a>
+						</div>
+                        
+                    </div>
+                    </div>
+					
+                    <div class="span3">
+							<h4 class="title"><span></span></h4>
+							<div><span class="req">*</span> Los campos son obligatorios.</div>
 					</div>
-            
-                
-        	</div>
-			</div>
+                    
+            	</form>
+            </div>
         </div>
-    
-	<!-- content close -->
-    
-<!-- footer begin -->
+	</div>
+
 	<footer>
   		<div class="cont3">
 			<div class="row">
