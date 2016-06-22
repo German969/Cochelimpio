@@ -11,8 +11,8 @@
   
   <link rel="stylesheet" type="text/css" href="engine1/style.css" />
   <script type="text/javascript" src="engine1/jquery.js"></script>
-  
-  <script src="js/move4.js"></script>
+  <script type="text/javascript" src="js/registro2.js"></script>
+
 
 </head>
 
@@ -23,15 +23,14 @@
 <header>
 	
 	<div id="mainmenu-container">
-        <ul id="mainmenu">
-          <li><a href="index-ese.html">Inicio</a></li>
-          <li><a href="gestionarturnos.html">Turnos</a></li>
-		  <li><a href="mensajes.html">Mensajes</a></li>
-          <li><a href="gestionar-servicios.html">Servicios</a></li>
-        </ul>
+		<ul id="mainmenu">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="session.html">LOGIN</a></li>
+			<li><a href="registro.html">Registrarse</a></li>
+		</ul>
 		
-		<span><a href="index.html" ><input id="im" type="button" class="cerrar btn btn-primary" value="Cerrar Sesion"> </a></span>
-		<div class="usuarioE" onclick="mover(this,document.getElementById('im'),900)"><i class=" icon-user"></i> Usuario: SERV EXT</div> 
+		<a href="session.html"><span class="usuario"><i class=" icon-user"></i> Usuario: INVITADO</span></a> 
 		
 	</div>
 	
@@ -55,95 +54,80 @@
 	</div>
 	
 </header>
-
+	<!-- header close -->
+    
+    <!-- subheader begin -->
 	<div id="subheader">
     	<div class="container">
     	  <div class="row">
           	<div class="span12">
-            	<h1>Mensajes</h1>
+            	<h1>Alta de Usuario Requerida</h1>
             </div>
           </div>
     	</div>
-    </div> 
-    
-    <div class="clearfix"></div>
-    
-	
+    </div>
+	<!-- subheader close -->  
+      
+	<!-- content begin -->
+   <div id="content">
+    	<div class="container">
+        	<div class="row">
+            	<div class="sin-pad">
+                    <div class="sin-margen span12">
+                    	<div class="row">
+							
+							<div class="span12">
+								
+								<h4>Para poder reservar turnos primero debe iniciar sesion o registrarse.</h4> 
 
-    <div id="contentM">
-    	<div class="achicado container">
-        	
-			
-            
-
-				<div class="table-responsive">
-				<table class="centrado borderb table table-striped">
-				  <thead>
-					<tr>
-					  <th>N&ordm de Mensaje</th>
-					  <th>Apellido y Nombre</th>
-					  <th>email</th>
-					  <th>Tipo de Cliente</th>
-					  <th>Fecha del Mensaje</th>
-					  <th> </th>
-					</tr>
-				  </thead>
-				  <tbody>
-					<tr>
-					  <th scope="row">1</th>
-					  <td>Juan Perez </td>
-					  <td>juanp80@gmail.com</td>
-					  <td>Comun</td>
-					  <td>02/02/2016</td>
-					  <td><a href="responder-mensaje1.html" class="btn btn-primary">Ver Mensaje</a></td>
-					</tr>
-					<tr>
-					  <th scope="row">2</th>
-					  <td>Gonzalo Romero</td>
-					  <td>gonromore94@gmail.com</td>
-					  <td>Corporativo</td>
-					  <td>21/02/2016</td>
-					  <td><a href="responder-mensaje2.html" class="btn btn-primary">Ver Mensaje</a></td>
-					</tr>
-					<tr>
-					  <th scope="row">3</th>
-					  <td>German Gaona</td>
-					  <td>germangaona@gmail.com</td>
-					  <td> No registrado</td>
-					  <td>16/05/2016</td>
-					  <td><a href="responder-mensaje3.html" class="btn btn-primary">Ver Mensaje</a></td>
-					</tr>
-					
-				  </tbody>
-				</table>
-				</div>
-			  
-                
-				
-             
-    	</div>
-        
+							</div>
+							
+                            <div id="botinreg">		
+								
+								<a href="session.html"><input type="button" class="btn btn-primary" value="Iniciar Sesion"></a>
+								
+								
+								
+								<a href="registro.html"><input type="button" class="btn btn-secondary" value="Registrarse"></a>
+								
+								
+							</div>
+								
+						</div>
+					</div>
+            	</div>
+            </div>
         </div>
-	
+	</div>
+	<!-- content close -->
+    
+<!-- footer begin -->
 	<footer>
   		<div class="cont3">
 			<div class="row">
+			
+			
 				
 				<div class="nosotros">
                 <div class="sin-margen span3">
-                	<h3 class="negro">Nosotros</h3>
+                	<h3 class="negro">Sobre Nosotros</h3>
                     Cochelimpio nació como un proyecto de 5 estudiantes de la ciudad de Resistencia, Chaco, y actualmente gestiona mas de 20 sucursales en toda la región.
                 </div>
 				</div>
 				
+			
+			
+			
+			
+			
 				<div class="contactos-b">
 				<div class="sin-margen span3">
-                	<h3 class="negro">Contactos</h3>
+                	<h3 class="negro">Atención al  Cliente</h3>
                     	<address>
                          French 414 - Resistencia - Chaco
                         <span><strong>Tel&eacutefono: </strong> 0362 - 4027867</span>
                         <span><strong>Fax: </strong> 0362 - 4027867</span>
-                        <span><strong>Email: </strong><a id="correo" href="atencion.cliente@cochelimpio.com"> atencion.cliente@cochelimpio.com</a></span>
+                        <span><strong>Email: </strong><a id="correo2" href=" atencion.cliente@cochelimpio.com">atencion.cliente@cochelimpio.com</a></span>
 						</address>   
                 </div>
 				</div>
@@ -157,6 +141,8 @@
 						<li><a href="https://www.youtube.com/"><img src="img/social-icons/youtube.png"  onmouseover="this.src='img/social-icons/youtube2.png';" onmouseout="this.src='img/social-icons/youtube.png';"/></a></li>
 					</ul>
 				</div>
+				
+			
 				
 			</div>
         </div>
@@ -182,3 +168,4 @@
 </body>
 
 </html>
+

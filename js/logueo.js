@@ -21,3 +21,4 @@ comparar = function(element, index, array) {
 asignar = function(index, element){
 	element.class = 'error'
 }
+

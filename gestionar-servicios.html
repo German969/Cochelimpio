@@ -16,10 +16,10 @@
   <script type="text/javascript" src="js/redir-s.js"></script>
   
 	<script src="js/elim-prod.js"></script>
-	<script src="js/comp-prod.js"></script>
-	<script src="js/modif-t.js"></script>
-	<script src="js/acept-mod-t.js"></script>
-	<script src="js/agregar-p.js"></script>
+	<script src="js/comp-serv.js"></script>
+	<script src="js/modif-s.js"></script>
+	<script src="js/acept-mod-s.js"></script>
+	<script src="js/agregar-s.js"></script>
 
 </head>
 
@@ -32,9 +32,9 @@
 	<div id="mainmenu-container">
         <ul id="mainmenu">
           <li><a href="index-ese.html">Inicio</a></li>
-          <li><a href="#">Turnos</a></li>
+          <li><a href="gestionarTurnos.html">Turnos</a></li>
 		  <li><a href="mensajes.html">Mensajes</a></li>
-          <li><a href="gestionar-servicios.html">Servicios</a></li>
+          <li><a href="#">Servicios</a></li>
         </ul>
 		
 		<span><a href="index.html" ><input id="im" type="button" class="cerrar btn btn-primary" value="Cerrar Sesion"> </a></span>
@@ -63,11 +63,11 @@
 	
 </header>
 
-	<div id="subheader">
+<div id="subheader">
     	<div class="container">
     	  <div class="row">
           	<div class="span12">
-            	<h1>Gestionar Turnos</h1>
+            	<h1>Servicios</h1>
             </div>
           </div>
     	</div>
@@ -79,52 +79,17 @@
 
     <div id="contentM">
     	<div class="achicado container">
-		
-			<div class='ftur'>
+        	
 			
-			<span class='fturl'>Mostrar turnos de: <span class='fturl1'>Día: <select id="diat">
-									<option value="1">Lunes</option>
-                                    <option value="2">Martes</option>
-                                    <option value="3">Miercoles</option>
-                                    <option value="4">Jueves</option>
-									<option value="5">Viernes</option>
-									<option value="6">Sabado</option>
-									<option value="7">Domingo</option>
-								</select></span>
-								
-								<span class='fturl2'>Semana: <select id="semt">
-									<option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-								</select></span>
-								
-								<span class='fturl3'>Mes: <select id="mest">
-									<option value="1">Enero</option>
-                                    <option value="2">Febrero</option>
-                                    <option value="3">Marzo</option>
-                                    <option value="4">Abril</option>
-									<option value="4">Mayo</option>
-									<option value="4">Junio</option>
-									<option value="4">Julio</option>
-									<option value="4">Agosto</option>
-									<option value="4">Septiembre</option>
-									<option value="4">Octubre</option>
-									<option value="4">Noviembre</option>
-									<option value="4">Diciembre</option>
-								</select></span>
-			</span>
-			</div>
-		
-		
+            
+
 				<div class="table-responsive">
 				<table id="listadop" class="centrado borderb table table-striped">
 				  <thead>
 					<tr>
 					  <th>Numero</th>
-					  <th>Nombre Cliente</th>
-					  <th>Tipo Lavado</th>
-					  <th>Hora Lavado</th>
+					  <th>Nombre del Servicio</th>
+					  <th>Tipo</th>
 
 					  <th> </th>
 					</tr>
@@ -132,47 +97,84 @@
 				  <tbody>
 					<tr id="p1">
 						<th id="f1c1" scope="row">1</th>
-						<td id="f1c2">Baez Roberto</td>
-						<td id="f1c3">Lavado1 </td>
-						<td id="f1c4">10:00</td>
+						<td id="f1c2">Lavado Tipo 1</td>
+						<td id="f1c3">Servicios Simples</td>
 						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p1'))"></td>
-						<td id="M1"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp2(1)"></td>
+						<td id="M1"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(1)"></td>
 					</tr>
 					<tr id="p2">
 						<th id="f2c1" scope="row">2</th>
-						<td id="f2c2">Barboza Facundo</td>
-						<td id="f2c3">Lavado3 </td>
-						<td id="f2c4">13:00</td>
+						<td id="f2c2">Lavado Tipo 2</th>
+						<td id="f2c3">Servicios Simples</td>
 						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p2'))"></td>
-						<td id="M2"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp2(2)"></td>
+						<td id="M2"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(2)"></td>
 					</tr>
 					<tr id="p3">
 						<th id="f3c1" scope="row">3</th>
-						<td id="f3c2">Bejarano Eve</td>
-						<td id="f3c3">Lavado2 </td>
-						<td id="f3c4">18:00</td>
+						<td id="f3c2">Lavado Tipo 3</td>
+						<td id="f3c3">Servicios Simples</td>
 						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p3'))"></td>
-						<td id="M3"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp2(3)"></td>
+						<td id="M3"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(3)"></td>
 					</tr>
 					<tr id="p4">
 						<th id="f4c1" scope="row">4</th>
-						<td id="f4c2">Campuzano Cinthia</td>
-						<td id="f4c3">Lavado1 </td>
-						<td id="f4c4">18:00</td>
+						<td id="f4c2">Lavado VIP</td>
+						<td id="f4c3">Servicios Premium</td>
 						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p4'))"></td>
-						<td id="M4"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp2(4)"></td>
+						<td id="M4"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(4)"></td>
 					</tr>
 					<tr id="p5">
 						<th id="f5c1" scope="row">5</th>
-						<td id="f5c2">Monzon German</td>
-						<td id="f5c3">Lavado2 </td>
-						<td id="f5c4">19:30</td>
+						<td id="f5c2">Lavado Cochelimpio</td>
+						<td id="f5c3">Servicios Premium</td>
 						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p5'))"></td>
-						<td id="M5"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp2(5)"></td>
+						<td id="M5"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(5)"></td>
+					</tr>
+					<tr id="p6">
+						<th id="f6c1" scope="row">6</th>
+						<td id="f6c2">Tratamiento Acrilico</td>
+						<td id="f6c3">Servicios Premium</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p6'))"></td>
+						<td id="M6"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(6)"></td>
+					</tr>
+					<tr id="p7">
+						<th id="f7c1" scope="row">7</th>
+						<td id="f7c2">Lustrado</td>
+						<td id="f7c3">Servicios Premium</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p7'))"></td>
+						<td id="M7"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(7)"></td>
+					</tr>
+					<tr id="p8">
+						<th id="f8c1" scope="row">8</th>
+						<td id="f8c2">Lavado Motor A Vapor</td>
+						<td id="f8c3">Servicios Premium</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p8'))"></td>
+						<td id="M8"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(8)"></td>
+					</tr>
+					<tr id="p9">
+						<th id="f9c1" scope="row">9</th>
+						<td id="f9c2">Limpieza De Tapizados</td>
+						<td id="f9c3">Servicios Premium</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p9'))"></td>
+						<td id="M9"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(9)"></td>
+					</tr>
+					<tr id="p10">
+						<th id="f10c1" scope="row">10</th>
+						<td id="f10c2">Tratamiento Especial Para Autos Inundados</td>
+						<td id="f10c3">Servicios Especiales</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p10'))"></td>
+						<td id="M10"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(10)"></td>
+					</tr>
+					<tr id="p11">
+						<th id="f11c1" scope="row">11</th>
+						<td id="f11c2">Preparacion Para La Venta De Autos</td>
+						<td id="f11c3">Servicios Especiales</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p11'))"></td>
+						<td id="M11"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp(11)"></td>
 					</tr>
 					
-					<input type="text" id="last" value="5">
-					<input type="text" id="tot" value="5">
+					<input type="text" id="last" value="11">
+					<input type="text" id="tot" value="11">
 					
 				  </tbody>
 				</table>
@@ -180,32 +182,42 @@
 			  
         <div class="span3 btn-book-submit">
               <a href="index-admin.html"><input type="button" class="btn btn-primary" value="Imprimir"> </a>
-        </div>       
+        </div>
+        <div class="span3 btn-book-submit">
+              <input type="button" class="btn btn-secundary" value="Agregar Producto" onclick="agregar()">
+        </div>        
 				
              
     	</div>
         
         </div>
-	
+
 	<footer>
   		<div class="cont3">
 			<div class="row">
+			
+			
 				
 				<div class="nosotros">
                 <div class="sin-margen span3">
-                	<h3 class="negro">Nosotros</h3>
+                	<h3 class="negro">Sobre Nosotros</h3>
                     Cochelimpio nació como un proyecto de 5 estudiantes de la ciudad de Resistencia, Chaco, y actualmente gestiona mas de 20 sucursales en toda la región.
                 </div>
 				</div>
 				
+			
+			
+			
+			
+			
 				<div class="contactos-b">
 				<div class="sin-margen span3">
-                	<h3 class="negro">Contactos</h3>
+                	<h3 class="negro">Atención al  Cliente</h3>
                     	<address>
                          French 414 - Resistencia - Chaco
                         <span><strong>Tel&eacutefono: </strong> 0362 - 4027867</span>
                         <span><strong>Fax: </strong> 0362 - 4027867</span>
-                        <span><strong>Email: </strong><a id="correo" href="atencion.cliente@cochelimpio.com"> atencion.cliente@cochelimpio.com</a></span>
+                        <span><strong>Email: </strong><a id="correo2" href=" atencion.cliente@cochelimpio.com">atencion.cliente@cochelimpio.com</a></span>
 						</address>   
                 </div>
 				</div>
@@ -219,6 +231,8 @@
 						<li><a href="https://www.youtube.com/"><img src="img/social-icons/youtube.png"  onmouseover="this.src='img/social-icons/youtube2.png';" onmouseout="this.src='img/social-icons/youtube.png';"/></a></li>
 					</ul>
 				</div>
+				
+			
 				
 			</div>
         </div>
